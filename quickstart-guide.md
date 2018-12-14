@@ -7,7 +7,7 @@ author:
 
 ### Abstract 
 
-This guide shows you to how to get started with ownCloud 10.0.10. The guide introduces ownCloud 10.0.10 and shows how to install and configure a basic setup using ownCloud Server Community Edition and ownCloud Desktop Client.
+This guide shows you to how to get started with ownCloud 10.0.10. The guide introduces ownCloud 10.0.10 and shows how to install and configure a basic setup using ownCloud Server Community Edition and ownCloud Desktop Client for Windows.
 
 ---
 ## Chapter 1. Overview
@@ -68,9 +68,9 @@ For detailed information about officially recommended and supported options for 
 
 #### 2.2 Install ownCloud Server Community Edition
 
-The procedures in this section show how to install ownCloud Server Community Edition on your Linux operating system. Specifically, the procedures show you how to:
+The procedures in this section show you how to install ownCloud Server Community Edition on your Linux operating system. Specifically, the procedures show you how to:
 
-- Use the ownCloud Docker image to install ownCloud Server files
+- Use the ownCloud Docker image to install ownCloud Server
 - Create a user account for client connections
 
 **Note:** The first procedure in this section installs ownCloud Server from a Docker image. For information about alternative ways to install ownCloud Server, see:
@@ -80,10 +80,10 @@ The procedures in this section show how to install ownCloud Server Community Edi
 
 #### 2.2.1. Install ownCloud with Docker
 
-This procedure shows you how to install ownCloud Server files using a Docker image. This image works with a data volume in the host file system and with separate MariaDB and Redis containers. Specifically, the configuration:
+This procedure shows you how to install ownCloud Server using a Docker image. This image works with a data volume in the host file system and with separate MariaDB and Redis containers. Specifically, the configuration:
 
-- Exposes port 8080, allowing for HTTP connections via this port.
-- Mounts the data and MySQL data directories on the host machine for persistent storage.
+- Exposes port 8080, allowing for HTTP connections via this port
+- Mounts the data and MySQL data directories on the host machine for persistent storage
 
 **Prerequisites:** This procedure assumes that you have an available Docker command-line tool. The procedure shows an example using the _Docker Compose_ tool.
 
